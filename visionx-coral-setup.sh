@@ -3,8 +3,8 @@ VERSION=v1.0
 SERVER=https://github.com/embedig/visionx
 opkg update
 opkg install git
-opkg install ${SERVER}/releases/download/${VERSION}/libcxx_6.0.1-r0_corei7-64.ipk
-opkg install ${SERVER}/releases/download/${VERSION}/python3-pil_6.1-r0_corei7-64.ipk
+opkg install ${SERVER}/releases/download/${VERSION}/libcxx_6.0.1.ipk
+opkg install ${SERVER}/releases/download/${VERSION}/python3-pil_6.1.ipk
 opkg install python3
 wget ${SERVER}/raw/master/get-pip.py
 python3 get-pip.py
