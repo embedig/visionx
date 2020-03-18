@@ -23,7 +23,13 @@ pip3 install edgetpu-2.13.0-py3-none-any.whl
 
 unzip edgetpu_runtime_20200128.zip
 ./edgetpu_runtime/install.sh
-python3 -c "import edgetpu; print(edgetpu.__version__)"
+python3 -c "import edgetpu; print('Edge TPU Python API v%s' % edgetpu.__version__)"
 cd ..
 rm -rf visionx-tmp
+# Test Example
+cd /usr/share/edgetpu/examples/
+python3 classify_image.py \
+--model models/mobilenet_v2_1.0_224_inat_bird_quant_edgetpu.tflite \
+--label models/inat_bird_labels.txt \
+--image images/parrot.jpg
 
