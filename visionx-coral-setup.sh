@@ -1,5 +1,5 @@
 #!/bin/sh
-set -e
+#set -e
 VERSION=v1.0
 SERVER=https://github.com/embedig/visionx
 opkg update
